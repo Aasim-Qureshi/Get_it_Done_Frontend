@@ -1,0 +1,39 @@
+.mainContainer {
+    display: flex;
+    border: 1px solid#D3D3D3;
+    height: 40px;
+    width: 60%;
+    margin-top: 24px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.leftContainer {
+    display: flex;
+}
+.iconContainer{
+    display: flex;
+    gap: 12px;
+}
+
+.buttonActive {
+    height: 16px;
+    width: 16px;
+    border-radius: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid aqua;
+    background-color: aqua;
+}
+.button {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #D3D3D3;
+    border-radius: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+};
+

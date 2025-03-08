@@ -1,0 +1,5 @@
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 56px;
+}

@@ -1,0 +1,72 @@
+
+.mainContainer {
+    border: 1px solid #D3D3D3;
+    /* height: 150px; */
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.topRowContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.projectName {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.bottomRowContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.statusContainer {
+    background-color: gray;
+    display: flex;
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 16px;
+}
+
+.statusContainer p {
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+.daysContainerNormal {
+    background-color: rgb(133, 236, 133);
+    padding: 6px;
+    border-radius: 16px;
+}
+
+.daysContainerUrgent {
+    background-color: rgb(236, 133, 133);
+    padding: 6px;
+    border-radius: 16px;
+}
+
+.daysContainer p {
+    margin: 0;
+}
+
+.daysRemaining {
+    font-weight: bolder;
+    font-size: 14px;
+}

@@ -1,0 +1,61 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .header {
+    font-size: 24px;
+  }
+  
+  .formContainer div {
+    width: 40%;
+    margin-top: 8px;
+  }
+  
+  .label {
+    margin-bottom: 8px;
+  }
+  
+  .inputBox {
+    height: 32px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #D3D3D3 ;
+    outline: none;
+    padding-left: 8px;
+  }
+  
+  .button {
+    height: 40px;
+    width: 110px;
+    margin-top: 16px;
+    background: transparent;
+    border: none;
+    background-color:#2EA0AA;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .imageContainer { 
+    width: 50%;
+  }
+  
+  .sideImage {
+    height: 85%;
+    width: 85%
+  }
+  
+  @media (max-width: 768px) { /* Adjust the width as needed */
+    .imageContainer {
+      display: none;
+    }
+  }
