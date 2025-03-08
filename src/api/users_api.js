@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const sendUserInfo = async (email, username, password) => {
     try {
         const response = await axios.post('https://get-it-done-backend.onrender.com/users/add-user', {
@@ -9,39 +11,27 @@ const sendUserInfo = async (email, username, password) => {
         console.log("Success: ", response.data);
         return response;
 
-    } catch (err) {
-        if (err.response) {
-            // Server responded with an error
-            console.log("Error Response Data: ", err.response.data);
-            console.log("Error Status: ", err.response.status);
-        } else {
-            // Something else went wrong
-            console.log("Error: ", err.message);
-        }
+    } catch(err) {
+        console.log("There was an error: ", err);
     }
-};
+}
 
 const sendLoginInfo = async (email, password) => {
     try {
         const response = await axios.post('https://get-it-done-backend.onrender.com/users/login', {
             email: email,
             password: password
-        }, { withCredentials: true });
+        },
+        {withCredentials: true}
+    );
 
         console.log("Success: ", response.data);
         return response;
 
-    } catch (err) {
-        if (err.response) {
-            // Server responded with an error
-            console.log("Error Response Data: ", err.response.data);
-            console.log("Error Status: ", err.response.status);
-        } else {
-            // Something else went wrong
-            console.log("Error: ", err.message);
-        }
+    } catch(err) {
+        console.log("There was an error: ", err);
         throw err;
     }
-};
+}
 
-export { sendUserInfo, sendLoginInfo };
+export {sendUserInfo, sendLoginInfo};
