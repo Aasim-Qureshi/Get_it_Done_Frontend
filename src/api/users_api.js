@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const sendUserInfo = async (email, username, password) => {
     try {
-        const response = await axios.post('http://localhost:5000/users/add-user', {
+        const response = await axios.post('https://get-it-done-backend.onrender.com/users/add-user', {
             email: email,
             username: username,
             password: password
@@ -18,7 +18,7 @@ const sendUserInfo = async (email, username, password) => {
 
 const sendLoginInfo = async (email, password) => {
     try {
-        const response = await axios.post('http://localhost:5000/users/login', {
+        const response = await axios.post('https://get-it-done-backend.onrender.com/users/login', {
             email: email,
             password: password
         },

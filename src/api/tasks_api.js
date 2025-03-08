@@ -3,7 +3,7 @@ import axios from 'axios';
 const getAllTasks = async (id) => {
     try {
         console.log(id);
-        const response = await axios.get(`http://localhost:5000/tasks/${id}/tasks`, {withCredentials: true});
+        const response = await axios.get(`https://get-it-done-backend.onrender.com/tasks/${id}/tasks`, {withCredentials: true});
         return response.data;
     } catch (err) {
         console.log("Error while fetching tasks, ", err);
@@ -12,7 +12,7 @@ const getAllTasks = async (id) => {
 
 const addTask = async (id, task) => {
     try {
-        const response = await axios.post(`http://localhost:5000/tasks/${id}/add/`, { title: task }, { withCredentials: true })
+        const response = await axios.post(`https://get-it-done-backend.onrender.com/tasks/${id}/add/`, { title: task }, { withCredentials: true })
         return response.data
         
     } catch (err) {
@@ -25,7 +25,7 @@ const toggleTask = async (id, status) => {
     console.log(status);
 
     try {
-        const response = await axios.put('http://localhost:5000/tasks/toggleStatus', {id: id, status: status}, {withCredentials: true});
+        const response = await axios.put('https://get-it-done-backend.onrender.com/tasks/toggleStatus', {id: id, status: status}, {withCredentials: true});
 
         return response.data;
 
@@ -36,7 +36,7 @@ const toggleTask = async (id, status) => {
 
 const deleteTask = async (id) => {
     try {
-        const response = await axios.delete('http://localhost:5000/tasks/delete', {
+        const response = await axios.delete('https://get-it-done-backend.onrender.com/tasks/delete', {
             data: { id: id }, 
             withCredentials: true
         });
